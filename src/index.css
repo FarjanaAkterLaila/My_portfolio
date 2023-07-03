@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply text-lg
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* color */
+.bg-primary {
+    background: #0F172A;
+}
+
+.bg-secondery {
+    background: #1E293B;
+}
+
+.bg-accent {
+    background: #7477FF;
+}
+
+.text-accent {
+    color: #7477FF;
+}
+
+
+nav li a {
+    @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+    color: #7477FF;
+}
+
+.mobile-nav {
+    @apply block md:hidden fixed top-10 py-2 w-full  bg-gray-900 duration-500;
+}
+
+
+/* hero */
+h1 {
+    /* font-family: 'Pacifico', cursive; */
+    line-height: 1.5 !important;
+}
+.image-wrap {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+.image-wrap img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top center;
+    transition: all 0.3s ease-in-out;
+    /* Adjust the duration (5s) and timing function (linear) as desired */
+}
+.image-wrap:hover img {
+    object-position: bottom center;
+    transition: all 3s ease-in-out;
+    animation: none; /* Disable the animation on hover*/
+} 
